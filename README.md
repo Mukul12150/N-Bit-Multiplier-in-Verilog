@@ -1,7 +1,7 @@
 # N-Bit-Multiplier-in-Verilog
 
 
-*Overview*
+**Overview**
 This project implements an N-bit multiplier using Verilog. The design can multiply two N-bit unsigned numbers to produce a 2N-bit result. This README provides an overview of the project structure, design details, and instructions for simulation and synthesis.
 
 *Features*
