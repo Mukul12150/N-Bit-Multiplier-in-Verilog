@@ -10,14 +10,14 @@ Modular Design: The multiplier is implemented using a hierarchical and modular a
 Testbench Included: A testbench is provided to simulate and verify the functionality of the multiplier.
 
 **Project Structure**
-*N-bit-Multiplier/*
-├── src/
-│   ├── multiplier.v      # Top-level module for the N-bit multiplier
-│   └── partial_product.v # Module for partial product generation
-├── tb/
-│   └── tb_multiplier.v   # Testbench for the N-bit multiplier
-├── README.md             # Project documentation
-└── Makefile              # Makefile for running simulations and synthesis
+>*N-bit-Multiplier/*
+>├── src/
+>│   ├── multiplier.v      # Top-level module for the N-bit multiplier
+>│   └── partial_product.v # Module for partial product generation
+>├── tb/
+>│   └── tb_multiplier.v   # Testbench for the N-bit multiplier
+>├── README.md             # Project documentation
+>└── Makefile              # Makefile for running simulations and synthesis
 
 **Design Details**
 *Multiplier Module (multiplier.v)*
