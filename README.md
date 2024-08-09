@@ -9,10 +9,10 @@ Modular Design: The multiplier is implemented using a hierarchical and modular a
 Testbench Included: A testbench is provided to simulate and verify the functionality of the multiplier.
 
 ### Project Structure
-``*N-bit-Multiplier/*                                                                                                                         
+``*N-bit-Multiplier/*                                                                                              
 ├── src/  
-│   ├── verilog code.v      # Top-level module for the N-bit multiplier                                                                                 
-│   └── partial_product.v # Module for partial product generation                                                                                      
+│   ├── verilog code.v      # Top-level module for the N-bit multiplier                                                                  
+│   └── partial_product.v # Module for partial product generation                                                      
 ├── tb/                                                                       
 │   └── Testbench.v   # Testbench for the N-bit multiplier                                                                                          
 ├── README.md             # Project documentation                                                                                                 
