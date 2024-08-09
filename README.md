@@ -11,12 +11,12 @@ Testbench Included: A testbench is provided to simulate and verify the functiona
 **Project Structure**
 ``>*N-bit-Multiplier/*
 ├── src/
-│   ├── multiplier.v      # Top-level module for the N-bit multiplier
-│   └── partial_product.v # Module for partial product generation
+│   ├── multiplier.v      # Top-level module for the N-bit multiplier \n
+│   └── partial_product.v # Module for partial product generation \n
 ├── tb/
-│   └── tb_multiplier.v   # Testbench for the N-bit multiplier
+│   └── tb_multiplier.v   # Testbench for the N-bit multiplier \n
 ├── README.md             # Project documentation
-└── Makefile              # Makefile for running simulations and synthesis``
+└── Makefile              # Makefile for running simulations and synthesis \n``
 
 **Design Details**
 *Multiplier Module (multiplier.v)*
