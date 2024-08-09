@@ -10,7 +10,7 @@ Testbench Included: A testbench is provided to simulate and verify the functiona
 
 ### Project Structure
 ``*N-bit-Multiplier/*                                                                                                                  
-├── src/  
+├── src/                                                                         
 │   ├── verilog code.v      # Top-level module for the N-bit multiplier                                                                  
 │   └── partial_product.v # Module for partial product generation                                                      
 ├── tb/                                                                       
