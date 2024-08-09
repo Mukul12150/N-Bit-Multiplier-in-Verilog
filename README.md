@@ -12,7 +12,7 @@ Testbench Included: A testbench is provided to simulate and verify the functiona
 ``*N-bit-Multiplier/*                                                                                                                  
 ├── src/                                                                                                                          
 │   ├── verilog code.v      # Top-level module for the N-bit multiplier                                                                  
-│   └── partial_product.v # Module for partial product generation                                                      
+│   └── partial_product.v # Module for partial product generation                                                                             
 ├── tb/                                                                       
 │   └── Testbench.v   # Testbench for the N-bit multiplier                                                                                          
 ├── README.md             # Project documentation                                                 
