@@ -15,7 +15,7 @@ Testbench Included: A testbench is provided to simulate and verify the functiona
 │   └── partial_product.v # Module for partial product generation                                                      
 ├── tb/                                                                       
 │   └── Testbench.v   # Testbench for the N-bit multiplier                                                                                          
-├── README.md             # Project documentation                                                                                                 
+├── README.md             # Project documentation                                                 
 └── Makefile              # Makefile for running simulations and synthesis ``                                                                 
 
 
