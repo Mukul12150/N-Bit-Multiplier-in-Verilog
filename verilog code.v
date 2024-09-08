@@ -22,7 +22,7 @@ input [N-1:0] a_in;
 input [N-1:0] b_in;
 
 // Reference registers
-reg[(((N*2)/3)+1)*4-1:0] bcd_reg = 0;
+
 reg[(N*2)-1:0] out_reg;
 reg finish_reg = 0;
 reg [(N*2)-1:0] a_in_reg;
@@ -30,7 +30,6 @@ reg [(N*2)-1:0] b_in_reg;
 reg [8:0] bits;
 
 // Continuous assignment
-assign bcd = bcd_reg; 
 assign out = out_reg;
 assign finish = finish_reg;
 
