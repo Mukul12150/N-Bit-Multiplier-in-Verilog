@@ -1,3 +1,5 @@
+// Code your testbench here
+// or browse Examples
 `timescale 1ns / 1ps
 
 
@@ -70,24 +72,10 @@ begin
 		if(bits==0)
 		begin
 			$display("Multiplication completed!");
+          $display("Multiplication completed! %d",out);
 			finish_reg = 1'b1;
-			
-			//----------------------------------------------------------------------
-			// conversion of binary to bcd
-			for(i=0;i<(N*2);i=i+1)
-			begin
-				if (3 <= (((N*2)/3)+1)*4-1 && bcd_reg[3:0] >= 5) bcd_reg[3:0] = bcd_reg[3:0] + 3;		
-				if (7 <= (((N*2)/3)+1)*4-1 && bcd_reg[7:4] >= 5) bcd_reg[7:4] = bcd_reg[7:4] + 3;
-				if (11 <= (((N*2)/3)+1)*4-1 && bcd_reg[11:8] >= 5) bcd_reg[11:8] = bcd_reg[11:8] + 3;
-				if (15 <= (((N*2)/3)+1)*4-1 && bcd_reg[15:12] >= 5) bcd_reg[15:12] = bcd_reg[15:12] + 3;
-				if (19 <= (((N*2)/3)+1)*4-1 && bcd_reg[19:16] >= 5) bcd_reg[19:13] = bcd_reg[19:13] + 3;
-				bcd_reg = {bcd_reg[(((N*2)/3)+1)*4-2:0],out_reg[(N*2)-1-i]};
-			end
-			//----------------------------------------------------------------------
-			$display("Conversion of binary to BCD completed!");
 
 		end
 	end
 end
 endmodule
-
