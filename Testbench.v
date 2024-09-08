@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
 
-
 module multiplier_tb;
    parameter n_bits = 5;
 	
@@ -14,7 +13,7 @@ module multiplier_tb;
 	// Outputs
 	wire [(n_bits*2)-1:0] out;
 	wire finish;
-	wire [(((n_bits*2)/3)+1)*4-1:0] bcd;
+
 
 	// Instantiate the Unit Under Test (UUT)
 	multiplier uut (
@@ -25,7 +24,7 @@ module multiplier_tb;
 		.start(start), 
 		.reset(reset), 
 		.finish(finish),
-		.bcd(bcd)
+	
 	);
    defparam uut.N = n_bits;
 
@@ -49,7 +48,7 @@ module multiplier_tb;
         
 		// Add stimulus here
 		reset = 0;
-      a_in = 'd26;
+                a_in = 'd26;
 		b_in = 'd30;
 		start = 0;
 		#200
